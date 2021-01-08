@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  webapp:
+    build: ./django
+    volumes:
+      - ./src:/code
+    working_dir: /code
