@@ -4,4 +4,8 @@ services:
     build: ./django
     volumes:
       - ./src:/code
-    working_dir: /code
+    working_dir: /code/mysite
+    command: python manage.py runserver 0:8080
+    ports: 
+      - "8080:8080"
+
